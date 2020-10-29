@@ -2,9 +2,10 @@ package com.bb.web.framework.proxy;
 
 /**
  * @ClassName Proxy
- * @Description: TODO
+ * @Description:
  * @Author zzy
  * @Date 2020/10/28
  **/
-public class Proxy {
+public interface Proxy {
+    Object doProxy(ProxyChain proxyChain) throws Throwable;
 }
