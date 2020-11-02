@@ -10,10 +10,15 @@ import java.io.InputStream;
  **/
 public class FileParam {
 
+    //文件表单的字段名
     private String fieldName;
+    //上传文件的文件名
     private String fileName;
+    //上传文件的大小
     private long fileSize;
+    //文件类型
     private String contentType;
+    //字节输入流
     private InputStream inputStream;
 
     public FileParam(String fieldName, String fileName, long fileSize, String contentType, InputStream inputStream) {

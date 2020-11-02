@@ -28,7 +28,6 @@ public class FileUtil {
      */
     public static File createFile(String filePath) {
         File file;
-
         try {
             file = new File(filePath);
             File parentDir = file.getParentFile();

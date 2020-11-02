@@ -45,7 +45,6 @@ public class StreamUtil {
             logger.error("copy stream failure", e);
             throw new RuntimeException(e);
         } finally {
-
             try {
                 inputStream.close();
                 outputStream.close();

@@ -18,6 +18,9 @@ import java.io.IOException;
 public class ServletHelper {
     private static Logger logger = LoggerFactory.getLogger(ServletHelper.class);
 
+    /**
+     * 使每个线程独自拥有一份ServletHepler实例
+     */
     private static ThreadLocal<ServletHelper> SERVLET_HELPER_HODLER = new ThreadLocal<>();
 
     private HttpServletRequest request;
